@@ -26,7 +26,8 @@ tail = newNode;
         }
     }
 
-public static void main(String[] args) {
+public static void main(String[] args)
+ {
         LinkedList list = new LinkedList();
         Scanner sc = new Scanner(System.in);
         int pos=0;
@@ -72,7 +73,8 @@ public static void main(String[] args) {
            }
         }
     }
-public void insertMiddle(int data, int pos) {
+public void insertMiddle(int data, int pos)
+ {
         if (pos < 1) {
             System.out.println("Position should be greater than or equal to 1.");
             return;
@@ -106,7 +108,6 @@ public void insertMiddle(int data, int pos) {
         newNode.next = current.next;
         current.next = newNode;
     }
-
 public void displayList() {
         Node current = head;
         while (current != null) {
