@@ -26,8 +26,7 @@ tail = newNode;
         }
     }
 
-public static void main(String[] args)
- {
+public static void main(String[] args) {
         LinkedList list = new LinkedList();
         Scanner sc = new Scanner(System.in);
         int pos=0;
@@ -47,7 +46,7 @@ public static void main(String[] args)
             System.out.println("LINKED LIST CREATED");
             System.out.println("LINKED LIST BEFORE INSERTING");
             list.displayList();
-            System.out.println("ENTER THE POSITON WHERE YOU WANT TO INSERT");
+            System.out.println("ENTER THE POSIITON WHERE YOU WANT TO INSERT");
             if(sc.hasNextInt())
             {
             pos=sc.nextInt();
@@ -56,6 +55,7 @@ public static void main(String[] args)
             {
             data1=sc.nextInt();
             list.insertMiddle(data1,pos);
+            System.out.println("ELEMENT INSERTED");
             System.out.println("LINKED LIST AFTER INSERTING");
             list.displayList();
             }
@@ -73,8 +73,7 @@ public static void main(String[] args)
            }
         }
     }
-public void insertMiddle(int data, int pos)
- {
+public void insertMiddle(int data, int pos) {
         if (pos < 1) {
             System.out.println("Position should be greater than or equal to 1.");
             return;
